@@ -1,0 +1,4 @@
+name: ConsoleBridge
+version: '${project.version}'
+main: newamazingpvp.consolebridge.ConsoleBridge
+api-version: '1.20'
