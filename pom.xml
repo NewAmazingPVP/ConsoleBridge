@@ -61,6 +61,15 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>scarsz</id>
+            <url>https://nexus.scarsz.me/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>dv8tion</id>
+            <name>m2-dv8tion</name>
+            <url>https://m2.dv8tion.net/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -69,6 +78,17 @@
             <artifactId>spigot-api</artifactId>
             <version>1.20-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.dv8tion</groupId>
+            <artifactId>JDA</artifactId>
+            <version>5.0.0-beta.24</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.scarsz.jdaappender</groupId>
+            <artifactId>jda5</artifactId>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 </project>
