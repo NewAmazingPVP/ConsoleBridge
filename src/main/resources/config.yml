@@ -1,0 +1,17 @@
+# Configuration for ConsoleBridge plugin
+
+# Discord bot token for authentication
+bot-token: "YOUR_BOT_TOKEN_HERE"
+
+# Discord channel ID where console logs will be sent
+console-channel-id: "123456789012345678"
+
+# Configuration for Discord message appearance
+logging-config:
+  colored: true
+  split-code-block-for-links: false
+  allow-link-embeds: true
+
+# Console log filters
+filters:
+  - log-filter: "not pass event"  # Example filter for SMP servers
