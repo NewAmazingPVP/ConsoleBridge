@@ -1,4 +1,4 @@
 name: ConsoleBridge
 version: '${project.version}'
-main: newamazingpvp.consolebridge.ConsoleBridge
+main: newamazingpvp.spigot.ConsoleBridge
 api-version: '1.20'
