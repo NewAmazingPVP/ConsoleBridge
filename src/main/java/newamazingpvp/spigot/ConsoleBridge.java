@@ -19,9 +19,9 @@ public final class ConsoleBridge extends JavaPlugin {
                 intializeBot();
                 //getServer().dispatchCommand(getServer().getConsoleSender(), "chunky continue");
                 ChannelLoggingHandler handler = new ChannelLoggingHandler(() -> jda.getTextChannelById(consoleChannel), config -> {
-                    config.setColored(getConfig().getBoolean("colored"));
-                    config.setSplitCodeBlockForLinks(getConfig().getBoolean("split-code-block-for-links"));
-                    config.setAllowLinkEmbeds(getConfig().getBoolean("allow-link-embeds"));
+                    config.setColored(getConfig().getBoolean("logging-config.colored"));
+                    config.setSplitCodeBlockForLinks(getConfig().getBoolean("logging-config.split-code-block-for-links"));
+                    config.setAllowLinkEmbeds(getConfig().getBoolean("logging-config.allow-link-embeds"));
                     /*config.addFilter(logItem -> {
                         String message = logItem.getMessage();
                         return message.contains("not pass event");
