@@ -3,6 +3,7 @@ package newamazingpvp.spigot;
 import me.scarsz.jdaappender.ChannelLoggingHandler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -43,6 +44,7 @@ public final class ConsoleBridge extends JavaPlugin {
         //EnumSet<GatewayIntent> allIntents = EnumSet.allOf(GatewayIntent.class);
 
         JDABuilder jdaBuilder = JDABuilder.createDefault(token);
+        jdaBuilder.enableIntents(GatewayIntent.MESSAGE_CONTENT);
         //jdaBuilder.enableIntents(allIntents);
         jda = jdaBuilder.build();
         jda.addEventListener(new ConsoleCommand(consoleChannel, this));
